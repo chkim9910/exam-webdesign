@@ -1,0 +1,230 @@
+/* reset */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333333;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* wrap */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* header */
+#header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+/* logo */
+#logo a {
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+/* gnb */
+#gnb .depth-1 {
+  display: flex;
+  align-items: center;
+}
+
+#gnb .depth-2 {
+  display: none;
+}
+
+#gnb .depth-1 a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 30px;
+  letter-spacing: -1px;
+}
+
+/* #gnb {
+  margin: -30px;
+} */
+
+#gnb .depth-1 a:hover {
+  color: palevioletred;
+  font-weight: 800;
+}
+
+/* slide */
+.slide {
+  height: 300px;
+}
+.list-slide {
+  height: 100%;
+  display: flex;
+}
+
+.list-slide a {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  width: 1200px;
+  height: 100%;
+  /* background-color: paleturquoise; */
+}
+
+.list-slide a span {
+  height: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: #333333;
+  padding-top: 180px;
+}
+
+/* .list-slide a img::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+} */
+
+.list-slide a img {
+  margin-right: 50px;
+}
+
+/* main */
+#main {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.sec-g {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 20px 0;
+}
+.sec-g .sec-tit {
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 10px 0 20px;
+}
+
+/* bbs */
+.list-bbs {
+  margin: 10px 0;
+  height: 80%;
+}
+
+.list-bbs a {
+  display: block;
+  height: 20px;
+  margin: 5px 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* gal */
+.sec-gal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-gal {
+  display: flex;
+  /* gap: 4.2px; */
+  /* justify-content: space-between; */
+  margin: 10px 0 0;
+}
+
+.list-gal li {
+  /* width: 33.333%; */
+  /* 위와 같은 방식으로 이미지 늘리거나 아래와 같은 방법으로 늘릴 수 있음 */
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.list-gal img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+/* bnr */
+.sec-bnr {
+  position: relative;
+}
+
+.sec-bnr img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.45);
+  /* margin-bottom: 20px; */
+}
+
+.sec-bnr .sec-tit {
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sec-bnr .txt {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+}
+
+/* footer */
+#footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+#footer .logo {
+  height: 100%;
+}
+
+#footer .logo a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .familysite {
+  height: 100%;
+}
+
+#footer .familysite a {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25%;
+  /* justify-content: space-between; */
+  align-content: center;
+  /* margin: 5px 0; */
+  /* margin-top: 5px; */
+}
