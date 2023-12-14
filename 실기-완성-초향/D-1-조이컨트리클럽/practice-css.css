@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: palegoldenrod;
+}
+#header {
+  height: 100px;
+  background-color: beige;
+}
+.content {
+  display: flex;
+  flex-grow: 1;
+  /* background-color: palevioletred; */
+}
+.content #main {
+  flex-grow: 1;
+  background-color: pink;
+}
+.content .aside {
+  width: 300px;
+  background-color: #ddd;
+}
+#footer {
+  height: 100px;
+  background-color: #ccc;
+}
