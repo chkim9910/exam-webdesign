@@ -43,6 +43,7 @@
 /* header nav */
 #gnb a {
   padding: 18px;
+  font-weight: 800;
 }
 
 #gnb .depth1-li {
@@ -55,7 +56,7 @@
 
 #gnb .depth1-li > a {
   transition: color 0.3s;
-  font-weight: 800;
+
   display: block;
   width: 100%;
   border-bottom: 1px solid #ddd;
@@ -65,7 +66,7 @@
   max-height: 300px;
   opacity: 1;
   overflow: visible;
-  background: rgb(34, 34, 34, 0.1);
+  background: rgb(34, 34, 34, 0.05);
   backdrop-filter: 5px;
 }
 
@@ -100,6 +101,7 @@
 
 #gnb .depth2 .menu-li a {
   transition: color 0.3s;
+  color: #777;
 }
 
 /* main */
@@ -108,7 +110,7 @@
   display: flex;
   flex-direction: column;
   /* height: 650px; */
-  background: #222;
+  background: #fff;
 }
 .main .upper {
   display: flex;
@@ -156,25 +158,138 @@
   background: url(../images/slide3.jpg) no-repeat 0% 50% / cover;
 }
 
+/* main .bnr */
 .main .bnr {
-  width: 230px;
   background: #999;
 }
+.bnr a {
+  display: block;
+  height: 100%;
+}
+.bnr img {
+  height: 100%;
+}
+
 .main .bottom {
   height: 250px;
   display: flex;
   gap: 30px;
 }
+
+/* main .tabs */
+.tabs {
+  display: flex;
+  position: relative;
+  flex: 1;
+}
+.tabs h2 a {
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.tabs ul {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  display: none;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.tabs .active h2 a {
+  background: rgb(6, 6, 80);
+  color: white;
+}
+.tabs .active ul {
+  display: flex;
+}
+
+.side {
+  flex: 1;
+  background: white;
+}
+
+/* main .bbs */
 .main .bbs {
   flex: 1;
-  background: #aaa;
+  background: #fff;
 }
+.bbs ul {
+  padding-top: 20px;
+  flex-direction: column;
+}
+.bbs li a {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.bbs li span {
+  display: block;
+  overflow: hidden;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* main .gal */
 .main .gal {
   flex: 1;
-  background: #eee;
+  background: #fff;
 }
+.gal ul {
+  /* display: flex; */
+  height: 80%;
+  padding-top: 20px;
+}
+.gal li {
+  margin-right: 20px;
+  flex: 1;
+}
+.gal a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.gal img {
+  height: 80%;
+  /* margin-bottom: 10px; */
+}
+
+/* footer */
 .footer {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100px;
-  background: #bbb;
+  /* background: #bbb; */
+  padding: 0 20px;
+}
+.footer img {
+  display: block;
+  width: 120px;
+  filter: grayscale(50%);
+}
+.footer h1 {
+  flex: 1;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+}
+.footer > ul {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+.footer > ul > ul:first-child {
+  margin-right: 10px;
 }
