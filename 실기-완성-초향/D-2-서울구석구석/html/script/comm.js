@@ -46,4 +46,17 @@ $(function () {
     tabItem.parents(".tab").removeClass("active");
     $(this).parents(".tab").addClass("active");
   });
+
+  // modal
+  const firstCont = $(".bbs ul li:first-child a");
+  const modalBtn = $("#modal button");
+  const modal = $("#modal");
+
+  modal.hide();
+  firstCont.on("click", function () {
+    modal.show();
+  });
+  modalBtn.on("click", function () {
+    modal.hide();
+  });
 });

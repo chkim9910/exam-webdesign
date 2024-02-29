@@ -279,7 +279,6 @@
 .footer h1 {
   flex: 1;
 }
-
 .footer p {
   flex: 1;
   text-align: center;
@@ -292,4 +291,53 @@
 }
 .footer > ul > ul:first-child {
   margin-right: 10px;
+}
+
+/* #modal */
+.modal-dimmed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-wrap {
+  width: 500px;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+.modal-wrap h2 {
+  font-size: 24px;
+}
+.modal-wrap p {
+  text-align: center;
+}
+.modal-wrap button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: transparent;
+  border: none;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgb(6, 6, 80);
+}
+button span {
+  font-size: 25px;
+  line-height: 15px;
+  color: white;
 }
