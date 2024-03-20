@@ -65,7 +65,7 @@ a {
 /* inner-box */
 .inner-box {
     flex: 1;
-    background: #ddd;
+    /* background: #ddd; */
 }
 
 /* main */
@@ -82,7 +82,7 @@ a {
     width: 800px;
     position: absolute;
     top: 0;
-    /* transition: all 0.3s; */
+    transition: all 0.3s;
 }
 .main .slide-el:first-child {
     height: 350px;
@@ -103,12 +103,57 @@ a {
 /* .main .contents */
 .main .contents {
     height: 200px;
+    display: flex;
+}
+
+/* main .tab */
+.main .tab {
+    flex: 1;
+    /* background: #000; */
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.tab .content {
+    position: absolute;
+    top: 47px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.tab a {
+    padding: 10px 0;
+}
+
+.tab a h2 {
+    font-size: 20px;
 }
 
 /* main .bbs */
+.main .bbs {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+}
+
 /* main .gal */
+.main .gal .content {
+    display: none;
+}
+
 /* main .ban */
+.main .ban {
+    flex: 1;
+    background: #055;
+}
 /* main .goto */
+.main .goto {
+    flex: 1;
+    background: #0ee;
+}
 
 /* footer */
 .footer {
